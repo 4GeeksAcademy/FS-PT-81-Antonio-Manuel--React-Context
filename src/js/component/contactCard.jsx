@@ -9,7 +9,7 @@ export const ContactCard = (props) => {
     const handleDelete = () => {actions.deleteContact(props.id)}
     const handleEdit = () => {
         actions.selectContact(store.contacts.filter(el=> el.id === props.id)[0])
-        navigate('/edit/' + props.contactId)
+        navigate('/edit/' + props.id)
     }
 
     return (

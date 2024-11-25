@@ -28,8 +28,10 @@ const handleCancel = () =>{
 const handleSubmit = e => {
     e.preventDefault();
     actions.createContact(formData);
-    console.log(store.contacts)
+    navigate('/')
 }
+
+
 
 
 

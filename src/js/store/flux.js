@@ -4,7 +4,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			url: 'https://playground.4geeks.com/contact',
-			contacts: []
+			contacts: [],
+			selected: {}
 		},
 		actions: {
 			selectContact: (contact) => setStore({selected: contact}),
